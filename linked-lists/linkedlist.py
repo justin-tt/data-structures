@@ -1,8 +1,8 @@
 class LinkedListNode:
     
-    def __init__(self, data, next=None):
+    def __init__(self, data):
         self.data = data
-        self.next = next
+        self.next = None
 
     def __str__(self):
         return f"Data: {self.data}, Next: {self.get_next().data if self.get_next() else None}"
@@ -22,10 +22,10 @@ class LinkedListNode:
 
 class DoublyLinkedListNode(LinkedListNode):
 
-    def __init__(self, data, next=None, prev=None):
+    def __init__(self, data):
         self.data = data
-        self.next = next
-        self.prev = prev
+        self.next = None
+        self.prev = None
 
     def __str__(self):
         return f"Data: {self.data}, Next: {self.get_next().data if self.get_next() else None}, Prev: {self.get_prev().data if self.get_prev() else None}"
