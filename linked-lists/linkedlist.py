@@ -23,8 +23,7 @@ class LinkedListNode:
 class DoublyLinkedListNode(LinkedListNode):
 
     def __init__(self, data):
-        self.data = data
-        self.next = None
+        super().__init__(data)
         self.prev = None
 
     def __str__(self):
