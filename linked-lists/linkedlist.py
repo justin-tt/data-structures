@@ -31,9 +31,7 @@ class DoublyLinkedListNode(LinkedListNode):
 
     def insert_between_next(self, node):
         node.prev = self
-        if self.next:
-            node.insert_between_next(self.next)
-        self.next = node
+        super().insert_between_next(node)
 
     def insert_between_prev(self, node):
         node.next = self
