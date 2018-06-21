@@ -141,3 +141,11 @@ if __name__ == "__main__":
     for i in range(10):
         R.add_front(i)
         print(R)
+    assert(R.first() == 9)
+    assert(R.last() == 9)
+    for i in range(9):
+        R.delete_front()
+        R.delete_end()
+    print(R)
+    assert(R.first() == 0)
+    assert(R.last() == 0)
