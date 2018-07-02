@@ -1,0 +1,17 @@
+from doublylinkeddeque import LinkedDeque
+
+dldeque = LinkedDeque()
+dldeque.insert_first(3)
+assert(dldeque.first() == 3)
+dldeque.insert_first(4)
+assert(dldeque.first() == 4)
+dldeque.insert_last(5)
+assert(dldeque.last() == 5)
+assert(dldeque.first() == 4)
+dldeque.delete_last()
+assert(dldeque.last() == 3)
+dldeque.delete_last()
+assert(dldeque.last() == 4)
+assert(len(dldeque) == 1)
+assert(dldeque.delete_first() == 4)
+assert(dldeque.is_empty() == True)
