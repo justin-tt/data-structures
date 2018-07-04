@@ -25,4 +25,8 @@ module.exports = class DoublyLinkedListNode {
   getData() {
     return this.data;
   }
+
+  setData(data) {
+    this.data = data;
+  }
 }
